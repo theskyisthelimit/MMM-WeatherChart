@@ -10,7 +10,7 @@ Daily Forecast (max and min temperature, weather icons on the top, rain volume (
 
 MagicMirror module for displaying weather forecasts from [OpenWeather](https://openweathermap.org/). Weather forecasts are displayed by using [Chart.js](https://www.chartjs.org/), an open-source free library for drawing charts.
 
-This module can work with free OpenWeather API, which only requires to sign up and get an API key.
+This module uses the OpenWeather API, which requires an API key. You'll need to subscribe to the [One Call API 3.0](https://openweathermap.org/price) and [limit](https://home.openweathermap.org/subscriptions) the number of calls per day to the free limit so you won't be charged. It can take up to an hour for your API key to start working.
 
 ## Installation
 
@@ -63,7 +63,7 @@ You can check [available MMM-WeatherChart versions](https://github.com/theskyist
 | updateInterval | | `10 * 60 * 1000` | Weather data update interval (miliseconds) |
 | retryDelay | | `5 * 1000` | Delay for retry to get weather data (miliseconds) |
 | apiBase | | `https://api.openweathermap.org/data/` | Base URL of [OpenWeather](https://openweathermap.org/) API |
-| apiVersion | | `2.5` | Version of [OpenWeather](https://openweathermap.org/) API |
+| apiVersion | | `3.0` | Version of [OpenWeather](https://openweathermap.org/) API |
 | apiEndpoint | | `onecall` | [OpenWeather](https://openweathermap.org/) API endpoint. [One Call API](https://openweathermap.org/api/one-call-api) is used by default, which is available for Free subscription. Note: Don't change this option because other endpoint is not supported! |
 | apiKey | yes | | API key to call [OpenWeather](https://openweathermap.org/) API. You can get the API key by signing up [OpenWeather](https://openweathermap.org/). |
 | lat | yes | | latitude of the place you want to get weather information |
